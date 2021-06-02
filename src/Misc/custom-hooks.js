@@ -35,7 +35,7 @@ export function useShows(key = 'shows') {
   return usePersistedReducer(showsReducer, [], key);
 }
 export function useLastQuery(key = 'lastQuery') {
-  const [input, setInput] = useState(() => {
+  const [inpu, setInput] = useState(() => {
     const persisted = sessionStorage.getItem(key);
 
     return persisted ? JSON.parse(persisted) : '';
@@ -46,7 +46,7 @@ export function useLastQuery(key = 'lastQuery') {
     sessionStorage.setItem(key, JSON.stringify(newState));
   };
 
-  return [input, setPersistedInput];
+  return [inpu, setPersistedInput];
 }
 
 const reducer = (prevState, action) => {
