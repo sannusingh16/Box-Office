@@ -52,12 +52,12 @@ const Home = () => {
       < RadioInputsWrapper>
       <div>
       <Customradio
-        label='shows' id='show-search'  value='shows' 
+        label='Shows' id='show-search'  value='shows' 
         checked={isearch} onChange={onradio} />
       </div>  
       <div>
         <Customradio
-        label='shows' id='actor-search'  value='people' 
+        label='Actors' id='actor-search'  value='people' 
         checked={!isearch} onChange={onradio} />
       </div>  
       </ RadioInputsWrapper>
