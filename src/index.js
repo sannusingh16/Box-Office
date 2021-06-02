@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import {HashRouter} from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom'
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
 
-ReactDOM.render(<HashRouter>
+ReactDOM.render(<BrowserRouter>
                 <App />
-                 </HashRouter>,document.getElementById('root'));
+                 </BrowserRouter>,document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
